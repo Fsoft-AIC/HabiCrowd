@@ -1,4 +1,4 @@
-### Hi there 👋
+Source code and data for HabiCrowd. Instructions and Assets are coming soon.
 
 <!--
 **habicrowd/HabiCrowd** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
