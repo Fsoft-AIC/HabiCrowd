@@ -4,7 +4,7 @@
 
 --------------------------------------------------------------------------------
 # HabiCrowd
-## NOTE: Both code and dataset are underdeveloped. Everything will be ready very SOON.
+## NOTE: Both code and dataset are underdeveloped. Everything will be ready soon.
 This repository contains the code for running HabiCrowd.
 
 ## Task: ObjectNav
