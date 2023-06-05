@@ -3,10 +3,9 @@
   </p>
 
 --------------------------------------------------------------------------------
-
 # HabiCrowd
-
-This repository contains the code for running HabiCrowd
+## NOTE: Both code and dataset are underdeveloped. Everything will be ready very SOON.
+This repository contains the code for running HabiCrowd.
 
 ## Task: ObjectNav
 
