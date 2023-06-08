@@ -1,0 +1,38 @@
+# MakeHuman exported MTL
+# www.makehumancommunity.org
+
+
+newmtl young_african_male
+Kd 0.5 0.5 0.5
+Ks 0.02745 0.02745 0.02745
+d 0
+map_Kd textures/young_darkskinned_male_diffuse.png
+map_D textures/young_darkskinned_male_diffuse.png
+
+newmtl Eye_brown
+Kd 1 1 1
+Ks 1 1 1
+d 0
+map_Kd textures/brown_eye.png
+map_D textures/brown_eye.png
+
+newmtl shoes03
+Kd 1 1 1
+Ks 0.03529 0.03137 0.03137
+d 0
+map_Kd textures/shoes03_diffuse.png
+map_D textures/shoes03_diffuse.png
+
+newmtl FedoraMaterial
+Kd 0.9686 0.9686 0.9686
+Ks 0.02745 0.02745 0.02745
+d 0
+map_Kd textures/fedora_texture.png
+map_D textures/fedora_texture.png
+
+newmtl male_worksuit01
+Kd 1 1 1
+Ks 0.02745 0.02745 0.02745
+d 0
+map_Kd textures/male_worksuit01_diffuse.png
+map_D textures/male_worksuit01_diffuse.png

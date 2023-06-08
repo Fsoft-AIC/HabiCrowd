@@ -1,0 +1,38 @@
+# MakeHuman exported MTL
+# www.makehumancommunity.org
+
+
+newmtl old_asian_male
+Kd 0.5 0.5 0.5
+Ks 0.02745 0.02745 0.02745
+d 0
+map_Kd textures/old_lightskinned_male_diffuse2.png
+map_D textures/old_lightskinned_male_diffuse2.png
+
+newmtl long01
+Kd 1 1 1
+Ks 0.04706 0.04706 0.04706
+d 0
+map_Kd textures/long01_diffuse.png
+map_D textures/long01_diffuse.png
+
+newmtl Eye_brown
+Kd 1 1 1
+Ks 1 1 1
+d 0
+map_Kd textures/brown_eye.png
+map_D textures/brown_eye.png
+
+newmtl female_casualsuit02
+Kd 1 1 1
+Ks 0.02745 0.02745 0.02745
+d 0
+map_Kd textures/female_casualsuit02_diffuse.png
+map_D textures/female_casualsuit02_diffuse.png
+
+newmtl shoes01
+Kd 1 1 1
+Ks 0.2784 0.2784 0.2784
+d 0
+map_Kd textures/shoes01_diffuse.png
+map_D textures/shoes01_diffuse.png

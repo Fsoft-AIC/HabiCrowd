@@ -1,0 +1,8 @@
+{
+    "render_asset": "human_12.glb",
+    "collision_asset": "human_1_convex.glb",
+    "join_collision_meshes": true,
+    "mass": 50,
+    "friction_coefficient": 0.5,
+    "restitution_coefficient": 0.2
+}
