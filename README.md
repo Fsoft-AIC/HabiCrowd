@@ -22,11 +22,14 @@ We have added a config in `configs/ddppo_objectnav.yaml` that includes a baselin
 
 1. Install the [Habitat-Sim](https://github.com/facebookresearch/habitat-sim/). Install [our forked version Habitat-Lab](https://github.com/habicrowd/habitat-lab.git). This version has included human dynamics but is underdeveloped. You can install Habitat-Sim using our custom Conda package for habitat challenge 2022 with: ```conda install -c aihabitat habitat-sim-challenge-2022```. For Habitat-Lab, we have created the `habitat-challenge-2022` tag in our Github repo, which can be cloned using: ```git clone --branch challenge-2022 https://github.com/facebookresearch/habitat-lab.git``` . Also ensure that habitat-baselines is installed when installing Habitat-Lab by using ```python setup.py develop --all``` . You will find further information for installation in the Github repositories. 
 
-1. Download the HM3D dataset following the instructions [here](https://matterport.com/partners/facebook). After downloading extract the dataset to folder `habitat-challenge/habitat-challenge-data/data/scene_datasets/hm3d/` folder (this folder should contain the `.glb` files from HM3D). Note that the `habitat-lab` folder is the [habitat-lab](https://github.com/facebookresearch/habitat-lab/) repository folder. The data also needs to be in the habitat-challenge-data/ in this repository.
+1. Download the HM3D dataset following the instructions [here](https://matterport.com/partners/facebook). After downloading extract the dataset to folder `habitat-challenge/habitat-challenge-data/data/scene_datasets/hm3d/` folder (this folder should contain the `.glb` files from HM3D). Note that the `habitat-lab` folder is the [habitat-lab](https://github.com/facebookresearch/habitat-lab/) repository folder. The data also needs to be in the habitat-challenge-data/ in this repository. Move the downloaded folder to [dataset folder](dataset/).
 
-1. **Objectnav**: Download the episodes dataset for HM3D ObjectNav from [link](https://dl.fbaipublicfiles.com/habitat/data/datasets/objectnav/hm3d/v1/objectnav_hm3d_v1.zip) and place it in the folder `habitat-challenge/habitat-challenge-data/data/datasets/objectnav/hm3d`. If placed correctly, you should have the train and val splits at `habitat-challenge/habitat-challenge-data/data/datasets/objectnav/hm3d/v1/train/` and `habitat-challenge/habitat-challenge-data/data/datasets/objectnav/hm3d/v1/val/` respectively. Place HM3D scenes downloaded in step-4 of local-evaluation under the `habitat-challenge/habitat-challenge-data/data/scene_datasets` folder. If you have already downloaded thes files for the habitat-lab repo, you may simply symlink them using `ln -s $PATH_TO_SCENE_DATASETS habitat-challenge-data/data/scene_datasets` (if on OSX or Linux).
-
-1. An example on how to train DD-PPO model can be found in [habitat-lab/habitat_baselines/rl/ddppo](https://github.com/facebookresearch/habitat-lab/tree/main/habitat_baselines/rl/ddppo). See the corresponding README in habitat-lab for how to adjust the various hyperparameters, save locations, visual encoders and other features.
+1. An example on how to train DD-PPO model can be found in [habitat-lab/habitat_baselines/rl/ddppo]([https://github.com/facebookresearch/habitat-lab/tree/main](https://github.com/habicrowd/habitat-lab/habitat_baselines/rl/ddppo). See the corresponding README in habitat-lab for how to adjust the various hyperparameters, save locations, visual encoders and other features. 
+    1. First, navigate to our forked Habitat-Lab version. We expect the structure folder as follows:
+        ```
+        |- HabiCrowd
+        |- habitat-lab
+        ```
 
     1. To run on a single machine use the following script from `habitat-lab` directory:
         ```bash
@@ -40,9 +43,14 @@ We have added a config in `configs/ddppo_objectnav.yaml` that includes a baselin
             --use_env \
             --nproc_per_node 1 \
             habitat_baselines/run.py \
-            --exp-config ../habitat-challenge/configs/ddppo_objectnav.yaml \
+            --exp-config ../HabiCrowd/dataset/configs/baseline_<name>.yaml \
             --run-type train \
-            TASK_CONFIG.DATASET.SPLIT 'train'
+            BASE_TASK_CONFIG_PATH ../HabiCrowd/dataset/configs/challenge_crowdnav.local.rgbd.yaml \
+            TASK_CONFIG.DATASET.SCENES_DIR ../HabiCrowd/dataset/crowd-nav-data/data/scene_datasets/ \
+            TASK_CONFIG.DATASET.SPLIT 'train' \
+            TENSORBOARD_DIR ./tb \
+            CHECKPOINT_FOLDER ./checkpoints \
+            LOG_FILE ./train.log
         ```
     1. There is also an example of running the code distributed on a cluster with SLURM. While this is not necessary, if you have access to a cluster, it can significantly speed up training. To run on multiple machines in a SLURM cluster run the following script: change ```#SBATCH --nodes $NUM_OF_MACHINES``` to the number of machines and ```#SBATCH --ntasks-per-node $NUM_OF_GPUS``` and ```$SBATCH --gres $NUM_OF_GPUS``` to specify the number of GPUS to use per requested machine.
         ```bash
@@ -66,9 +74,14 @@ We have added a config in `configs/ddppo_objectnav.yaml` that includes a baselin
 
         set -x
         srun python -u -m habitat_baselines.run \
-            --exp-config ../habitat-challenge/configs/ddppo_objectnav.yaml \
+            --exp-config ../HabiCrowd/dataset/configs/baseline_<name>.yaml \
             --run-type train \
-            TASK_CONFIG.DATASET.SPLIT 'train'
+            BASE_TASK_CONFIG_PATH ../HabiCrowd/dataset/configs/challenge_crowdnav.local.rgbd.yaml \
+            TASK_CONFIG.DATASET.SCENES_DIR ../HabiCrowd/dataset/crowd-nav-data/data/scene_datasets/ \
+            TASK_CONFIG.DATASET.SPLIT 'train' \
+            TENSORBOARD_DIR ./tb \
+            CHECKPOINT_FOLDER ./checkpoints \
+            LOG_FILE ./train.log
         ```
 
     1. The preceding two scripts are based off ones found in the [habitat_baselines/ddppo](https://github.com/facebookresearch/habitat-lab/tree/main/habitat_baselines/rl/ddppo).
@@ -79,6 +92,9 @@ We have added a config in `configs/ddppo_objectnav.yaml` that includes a baselin
     python -u -m habitat_baselines.run \
         --exp-config ../habitat-challenge/configs/ddppo_objectnav.yaml \
         --run-type eval \
+        BASE_TASK_CONFIG_PATH ../HabiCrowd/dataset/configs/challenge_crowdnav.local.rgbd.yaml \
+        TASK_CONFIG.DATASET.DATA_PATH ../HabiCrowd/dataset/crowd-nav/crowdnav_hm3d/{split}/{split}.json.gz 
+        TASK_CONFIG.DATASET.SCENES_DIR ../HabiCrowd/dataset/crowd-nav-data/data/scene_datasets/ \
         EVAL_CKPT_PATH_DIR $PATH_TO_CHECKPOINT \
         TASK_CONFIG.DATASET.SPLIT val
     ```
