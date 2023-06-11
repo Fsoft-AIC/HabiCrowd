@@ -39,4 +39,6 @@ For the navigation settings, see [crowd-nav/crowdnav_hm3d](crowd-nav/crowdnav_hm
 
 For the material of humans, see [entities](entities).
 
+We will release weights of pre-trained model after finishing code instructions.
+
 Note that, this is only the documentation of HabiCrowd. If you want to install as well as run code, we recommend to read the instructions from the [main site](https://github.com/habicrowd/HabiCrowd).
