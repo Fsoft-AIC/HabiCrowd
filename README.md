@@ -15,7 +15,7 @@ In ObjectNav, an agent is placed at a random starting point and orientation in a
 The agent has an RGB-D camera as well as a (noiseless) GPS+Compass sensor. The GPS+Compass sensor determines the agent's current location and orientation in relation to the beginning of the episode. In simulation, we try to match the camera specifications (field of view, resolution) to the Azure Kinect camera, although this work does not include any injected sensor noise.
 
 ### Dataset
-We use 56 scenes in the [Habitat-Matterport3D (HM3D)](https://aihabitat.org/datasets/hm3d/)[2] dataset with train/val/test splits on 36/8/12. Following Chaplot et al.[3], we use 6 object goal categories: chair, couch, potted plant, bed, toilet and tv.
+We use 56 scenes in the [Habitat-Matterport3D (HM3D)](https://aihabitat.org/datasets/hm3d/)[2] dataset with train/val/test splits on 36/8/12. Following Chaplot _et al._[3], we use 6 object goal categories: chair, couch, potted plant, bed, toilet and tv.
 
 ### Starter
 We have added a config in `configs/ddppo_objectnav.yaml` that includes a baseline using DD-PPO from Habitat-Lab.
@@ -102,10 +102,12 @@ We have added a config in `configs/ddppo_objectnav.yaml` that includes a baselin
     ```bash
     wget https://dl.fbaipublicfiles.com/habitat/data/baselines/v1/ddppo_objectnav_habitat2022_challenge_baseline_v1.pth
     ```
+## Task: PointNav
+Instructions coming soon.
 
 ## Acknowledgments
 
-We thank the team behind [Habitat-Matterport3D](https://aihabitat.org/datasets/hm3d/) datasets and [Habitat-Challenge-2022](https://aihabitat.org/challenge/2022/)
+We thank the teams behind [Habitat-Matterport3D](https://aihabitat.org/datasets/hm3d/) datasets and [Habitat-Challenge-2022](https://aihabitat.org/challenge/2022/)
 
 ## References
 
