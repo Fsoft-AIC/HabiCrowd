@@ -24,7 +24,7 @@ We have added a config in `configs/ddppo_objectnav.yaml` that includes a baselin
 
 1. Download the HM3D dataset following the instructions [here](https://matterport.com/partners/facebook). After downloading extract the dataset to folder `habitat-challenge/habitat-challenge-data/data/scene_datasets/hm3d/` folder (this folder should contain the `.glb` files from HM3D). Note that the `habitat-lab` folder is the [habitat-lab](https://github.com/facebookresearch/habitat-lab/) repository folder. The data also needs to be in the habitat-challenge-data/ in this repository. Move the downloaded folder to [dataset folder](dataset/).
 
-1. An example on how to train DD-PPO model can be found in [habitat-lab/habitat_baselines/rl/ddppo]([https://github.com/facebookresearch/habitat-lab/tree/main](https://github.com/habicrowd/habitat-lab/habitat_baselines/rl/ddppo). See the corresponding README in habitat-lab for how to adjust the various hyperparameters, save locations, visual encoders and other features. 
+1. An example on how to train DD-PPO model can be found in [habitat-lab/habitat_baselines/rl/ddppo](https://github.com/habicrowd/habitat-lab/habitat_baselines/rl/ddppo). See the corresponding README in habitat-lab for how to adjust the various hyperparameters, save locations, visual encoders and other features. 
     1. First, navigate to our forked Habitat-Lab version. We expect the structure folder as follows:
         ```
         |- HabiCrowd
