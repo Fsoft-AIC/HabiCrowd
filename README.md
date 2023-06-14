@@ -14,7 +14,7 @@ In ObjectNav, an agent is placed at a random starting point and orientation in a
 The agent has an RGB-D camera as well as a (noiseless) GPS+Compass sensor. The GPS+Compass sensor determines the agent's current location and orientation in relation to the beginning of the episode. In simulation, we try to match the camera specifications (field of view, resolution) to the Azure Kinect camera, although this work does not include any injected sensor noise.
 
 ### Dataset
-We use 56 scenes in the [Habitat-Matterport3D (HM3D)](https://aihabitat.org/datasets/hm3d/)[2] dataset with train/val/test splits on 36/8/12. Following Chaplot _et al._[3], we use 6 object goal categories: chair, couch, potted plant, bed, toilet and tv.
+We use 56 scenes in the [Habitat-Matterport3D (HM3D)](https://aihabitat.org/datasets/hm3d/) dataset with train/val/test splits on 36/8/12. We use 6 object goal categories: chair, couch, potted plant, bed, toilet and tv as traditional ObjectNav in Habitat simulator.
 
 ### Starter
 We have added a config in `configs/ddppo_objectnav.yaml` that includes a baseline using DD-PPO from Habitat-Lab.
@@ -118,14 +118,4 @@ To test on a single machine use the following script from `habitat-lab` director
 
 ## Acknowledgments
 
-NOTE: Both code and dataset are underdeveloped. Everything will be ready soon. We thank the teams behind [Habitat-Matterport3D](https://aihabitat.org/datasets/hm3d/) datasets, [Habitat-Challenge-2022](https://aihabitat.org/challenge/2022/), and [Habitat-Lab](https://github.com/facebookresearch/habitat-lab).
-
-## References
-
-[1] [Habitat: A Platform for Embodied AI Research](https://arxiv.org/abs/1904.01201). Manolis Savva\*, Abhishek Kadian\*, Oleksandr Maksymets\*, Yili Zhao, Erik Wijmans, Bhavana Jain, Julian Straub, Jia Liu, Vladlen Koltun, Jitendra Malik, Devi Parikh, Dhruv Batra. IEEE/CVF International Conference on Computer Vision (ICCV), 2019.
-
-[2] [Habitat-Matterport 3D Dataset (HM3D): 1000 Large-scale 3D Environments for Embodied AI](https://arxiv.org/abs/2109.08238) Santhosh K. Ramakrishnan, Aaron Gokaslan, Erik Wijmans, Oleksandr Maksymets, Alex Clegg, John Turner, Eric Undersander, Wojciech Galuba, Andrew Westbury, Angel X. Chang, Manolis Savva, Yili Zhao, Dhruv Batra. arXiv:2109.08238, 2021.
-
-[3] [Object Goal Navigation using Goal-Oriented Semantic Exploration](https://arxiv.org/abs/2007.00643) Devendra Singh Chaplot, Dhiraj Gandhi, Abhinav Gupta, Ruslan Salakhutdinov. NeurIPS, 2020.
-
-[4] [On evaluation of embodied navigation agents](https://arxiv.org/abs/1807.06757). Peter Anderson, Angel Chang, Devendra Singh Chaplot, Alexey Dosovitskiy, Saurabh Gupta, Vladlen Koltun, Jana Kosecka, Jitendra Malik, Roozbeh Mottaghi, Manolis Savva, Amir R. Zamir. arXiv:1807.06757, 2018.
+Both code and dataset are underdeveloped. Everything will be ready soon.We thank the teams behind [Habitat-Matterport3D](https://aihabitat.org/datasets/hm3d/) datasets, [Habitat-Challenge-2022](https://aihabitat.org/challenge/2022/), and [Habitat-Lab](https://github.com/facebookresearch/habitat-lab).
