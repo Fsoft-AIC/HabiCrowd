@@ -5,7 +5,6 @@
 
 --------------------------------------------------------------------------------
 # HabiCrowd
-## NOTE: Both code and dataset are underdeveloped. Everything will be ready soon.
 This repository contains the code for running HabiCrowd.
 
 ## Task: ObjectNav
@@ -119,7 +118,7 @@ To test on a single machine use the following script from `habitat-lab` director
 
 ## Acknowledgments
 
-We thank the teams behind [Habitat-Matterport3D](https://aihabitat.org/datasets/hm3d/) datasets, [Habitat-Challenge-2022](https://aihabitat.org/challenge/2022/), and [Habitat-Lab](https://github.com/facebookresearch/habitat-lab).
+NOTE: Both code and dataset are underdeveloped. Everything will be ready soon. We thank the teams behind [Habitat-Matterport3D](https://aihabitat.org/datasets/hm3d/) datasets, [Habitat-Challenge-2022](https://aihabitat.org/challenge/2022/), and [Habitat-Lab](https://github.com/facebookresearch/habitat-lab).
 
 ## References
 
