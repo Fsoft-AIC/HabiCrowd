@@ -103,11 +103,23 @@ We have added a config in `configs/ddppo_objectnav.yaml` that includes a baselin
     wget https://dl.fbaipublicfiles.com/habitat/data/baselines/v1/ddppo_objectnav_habitat2022_challenge_baseline_v1.pth
     ```
 ## Task: PointNav
-Instructions coming soon.
+Follow the instructions from [Habitat-Lab](https://github.com/facebookresearch/habitat-lab/tree/main/habitat-baselines). First, you need to acquire HM3D PointNav dataset in the [link](https://arxiv.org/abs/1807.06757).
+
+To run on a single machine use the following script from `habitat-lab` directory:
+  ```
+      python -u -m habitat_baselines.run \
+      --config-name=pointnav/baseline_<name>.yaml
+  ```
+To test on a single machine use the following script from `habitat-lab` directory:
+  ```
+      python -u -m habitat_baselines.run \
+      --config-name=pointnav/baseline_<name>.yaml \
+      habitat_baselines.evaluate=True
+  ```
 
 ## Acknowledgments
 
-We thank the teams behind [Habitat-Matterport3D](https://aihabitat.org/datasets/hm3d/) datasets and [Habitat-Challenge-2022](https://aihabitat.org/challenge/2022/)
+We thank the teams behind [Habitat-Matterport3D](https://aihabitat.org/datasets/hm3d/) datasets, [Habitat-Challenge-2022](https://aihabitat.org/challenge/2022/), and [Habitat-Lab](https://github.com/facebookresearch/habitat-lab).
 
 ## References
 
