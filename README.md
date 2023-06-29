@@ -95,10 +95,6 @@ We use 56 scenes in the [Habitat-Matterport3D (HM3D)](https://aihabitat.org/data
         EVAL_CKPT_PATH_DIR $PATH_TO_CHECKPOINT \
         TASK_CONFIG.DATASET.SPLIT val
     ```
-    The weights used for our DD-PPO Objectnav baseline for the Habitat-2022 challenge can be downloaded with the following command:
-    ```bash
-    wget https://dl.fbaipublicfiles.com/habitat/data/baselines/v1/ddppo_objectnav_habitat2022_challenge_baseline_v1.pth
-    ```
 ## Task: PointNav
 Follow the instructions from [Habitat-Lab](https://github.com/facebookresearch/habitat-lab/tree/main/habitat-baselines). First, you need to acquire HM3D PointNav dataset in the [link](https://arxiv.org/abs/1807.06757).
 
