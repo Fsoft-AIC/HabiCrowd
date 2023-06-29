@@ -98,7 +98,7 @@ We use 56 scenes in the [Habitat-Matterport3D (HM3D)](https://aihabitat.org/data
 ## Task: PointNav
 Follow the instructions from [Habitat-Lab](https://github.com/facebookresearch/habitat-lab/tree/main/habitat-baselines). First, you need to acquire HM3D PointNav dataset in the [link](https://arxiv.org/abs/1807.06757).
 
-To run on a single machine use the following script from `habitat-lab` directory:
+We still use [the forked version Habitat-Lab](https://github.com/habicrowd/habitat-lab). To run on a single machine use the following script from `habitat-lab` directory:
   ```
       python -u -m habitat_baselines.run \
       --config-name=pointnav/baseline_<name>.yaml
