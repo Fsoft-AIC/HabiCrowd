@@ -19,15 +19,15 @@ We use 56 scenes in the [Habitat-Matterport3D (HM3D)](https://aihabitat.org/data
 ### Starter
 1. Install the [Habitat-Sim](https://github.com/facebookresearch/habitat-sim/). Install [our forked version Habitat-Lab](https://github.com/habicrowd/habitat-lab), where we have developed our baselines as well as human dynamics. You can install Habitat-Sim using our custom Conda package for habitat challenge 2022 with:
 
-```conda install -c aihabitat habitat-sim-challenge-2022```
+  ```conda install -c aihabitat habitat-sim-challenge-2022```
 
 For Habitat-Lab, we utilized the `habitat-challenge-2022` tag in the Habitat's Github repo, which can be cloned using: 
 
-```git clone --branch challenge-2022 https://github.com/facebookresearch/habitat-lab.git``` 
+  ```git clone --branch challenge-2022 https://github.com/facebookresearch/habitat-lab.git``` 
 
 Also ensure that habitat-baselines is installed when installing Habitat-Lab by using 
 
-```python setup.py develop --all```
+  ```python setup.py develop --all```
 
 You will find further information for installation in the original Github repositories. 
 
