@@ -21,18 +21,18 @@ We use 56 scenes in the [Habitat-Matterport3D (HM3D)](https://aihabitat.org/data
     ```
     conda install -c aihabitat habitat-sim-challenge-2022
     ```
-
-  For Habitat-Lab, we utilized the `habitat-challenge-2022` tag in the Habitat's Github repo, which can be cloned using: 
+    
+  1. For Habitat-Lab, we utilized the `habitat-challenge-2022` tag in the Habitat's Github repo, which can be cloned using: 
     ```
     git clone --branch challenge-2022 https://github.com/facebookresearch/habitat-lab.git
     ``` 
   
-  Also ensure that habitat-baselines is installed when installing Habitat-Lab by using:
+  1. Also ensure that habitat-baselines is installed when installing Habitat-Lab by using:
     ```
     python setup.py develop --all
     ```
   
-  You will find further information for installation in the original Github repositories. 
+  1. You will find further information for installation in the original Github repositories. 
 
 1. Download the HM3D dataset following the instructions [here](https://matterport.com/partners/facebook). After downloading extract the dataset to folder `habitat-challenge/habitat-challenge-data/data/scene_datasets/hm3d/` folder (this folder should contain the `.glb` files from HM3D). Note that the `habitat-lab` folder is the [habitat-lab](https://github.com/habicrowd/habitat-lab) repository folder. The data also needs to be in the habitat-challenge-data/ in this repository. Move the downloaded folder to [dataset folder](dataset/).
 
