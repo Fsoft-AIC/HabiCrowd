@@ -123,4 +123,4 @@ To test on a single machine use the following script from `habitat-lab` director
 
 ## Acknowledgments
 
-Both code and dataset are underdeveloped. Everything will be ready soon.We thank the teams behind [Habitat-Matterport3D](https://aihabitat.org/datasets/hm3d/) datasets, [Habitat-Challenge-2022](https://aihabitat.org/challenge/2022/), and [Habitat-Lab](https://github.com/facebookresearch/habitat-lab).
+We thank the teams behind [Habitat-Matterport3D](https://aihabitat.org/datasets/hm3d/) datasets, [Habitat-Challenge-2022](https://aihabitat.org/challenge/2022/), and [Habitat-Lab](https://github.com/facebookresearch/habitat-lab).
