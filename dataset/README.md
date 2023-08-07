@@ -6,7 +6,7 @@ We document the HabiCrowd dataset as follows.
     |- baseline_<name>.yaml (Specified config on hyperparameters of each algorithm)
     |- challenge_crowdnav.local.rgbd.yaml (Shared config about environment of all algorithms.)
 |- crowd-nav
-    |- bot_config_v1.0/             (Config for bots)
+    |- bot_config_v2.1/             (New version config for bots)
         |- train                    (Train split)
             |- <scene_name>.json
         |- val                      (Val split)
@@ -30,6 +30,8 @@ We document the HabiCrowd dataset as follows.
     |- human_<i>.mtl
     |- human_<i>.object_config.json
 ```
+# Update
+As per 7th August 2023, we have included a total of 480 configurations of human dynamics to HabiCrowd. The new version for bot_config is 2.1.
 
 For hyperparameters of baselines as well as simulator, see [configs](./configs/).
 
