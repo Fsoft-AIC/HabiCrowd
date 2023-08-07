@@ -7,6 +7,9 @@
 # HabiCrowd
 This repository contains the code for running HabiCrowd.
 
+# Update
+- As per 7th August 2023, we have included 426 more scenes to HabiCrowd, increasing the number of configured scenes to 480.
+   
 ## Task: ObjectNav
 
 In ObjectNav, an agent is placed at a random starting point and orientation in an unknown environment and instructed to go to an instance of an object category (*'find a chair'*). There is no map of the world provided, thus the agent must rely only on its sensory input to navigate.
