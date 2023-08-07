@@ -100,7 +100,7 @@ You will find further information for installation in the the forked Github repo
         --exp-config ../habitat-challenge/configs/ddppo_objectnav.yaml \
         --run-type eval \
         BASE_TASK_CONFIG_PATH ../HabiCrowd/dataset/configs/challenge_crowdnav.local.rgbd.yaml \
-        TASK_CONFIG.DATASET.DATA_PATH ../HabiCrowd/dataset/crowd-nav/crowdnav_hm3d/{split}/{split}.json.gz 
+        TASK_CONFIG.DATASET.DATA_PATH ../HabiCrowd/dataset/crowd-nav/crowdnav_hm3d_v2.1/{split}/{split}.json.gz 
         TASK_CONFIG.DATASET.SCENES_DIR ../HabiCrowd/dataset/crowd-nav-data/data/scene_datasets/ \
         EVAL_CKPT_PATH_DIR $PATH_TO_CHECKPOINT \
         TASK_CONFIG.DATASET.SPLIT val
