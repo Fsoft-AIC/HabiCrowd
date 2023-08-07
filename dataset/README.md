@@ -11,7 +11,7 @@ We document the HabiCrowd dataset as follows.
             |- <scene_name>.json
         |- val                      (Val split)
             |- <scene_name>.json
-    |- crowdnav_hm3d/             (Our modified config for HabiCrowd as we only utilize 56 scenes)
+    |- crowdnav_hm3d_v2.1/             (New version configs for PointNav and ObjectNav)
         |- train/                   (Train split)
             |- content
                 |- <scene_name>.json.gz
