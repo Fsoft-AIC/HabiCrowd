@@ -1,3 +1,6 @@
+# Update
+- As per 7th August 2023, we have included 426 more scenes to HabiCrowd, increasing the number of configured scenes to 480.
+
 <p align="center">
   <img width = "50%" src='res/img/habicrowd.png' />
   </p>
@@ -6,9 +9,6 @@
 --------------------------------------------------------------------------------
 # HabiCrowd
 This repository contains the code for running HabiCrowd.
-
-# Update
-- As per 7th August 2023, we have included 426 more scenes to HabiCrowd, increasing the number of configured scenes to 480.
    
 ## Task: ObjectNav
 
