@@ -25,9 +25,11 @@ EVAL:
 RL:
   SUCCESS_REWARD: 2.5
   SLACK_REWARD: -1e-3
+  DISTANCE_WEIGHT: 0.5
+  COLLISION_PENALTY: -1e-4
 
   POLICY:
-    name: "PointNavResNetPolicy"
+    name: "AblPolicy"
     OBS_TRANSFORMS:
       ENABLED_TRANSFORMS: ("ResizeShortestEdge", "CenterCropper")
 
@@ -52,7 +54,7 @@ RL:
 
     hidden_size: 512
 
-  DDPPO:
+  CROWD_NET:
     sync_frac: 0.6
     # The PyTorch distributed backend to use
     distrib_backend: NCCL
@@ -68,6 +70,9 @@ RL:
     reset_critic: True
 
     # Model parameters
-    backbone: resnet50
-    rnn_type: LSTM
+    backbone: crowd_net
+    rnn_type: GRU
     num_recurrent_layers: 2
+
+    # Transformer memory
+    transformer_memory_size: 128
