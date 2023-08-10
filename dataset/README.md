@@ -32,6 +32,7 @@ We document the HabiCrowd dataset as follows.
 ```
 # Update
 As per 7th August 2023, we have included a total of 480 configurations of human dynamics to HabiCrowd. The new version for bot_config is 2.1.
+As per 10th August 2023, we also included a new set of configs to handle with Instance Image Navigation. Instruction can be found in the [main site](https://github.com/habicrowd/HabiCrowd).
 
 For hyperparameters of baselines as well as simulator, see [configs](./configs/).
 
