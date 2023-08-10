@@ -124,15 +124,15 @@ To test on a single machine use the following script from `habitat-lab` director
 ## Task: ImageNav
 Follow the instructions from [Habitat-Lab](https://github.com/facebookresearch/habitat-lab/tree/main/habitat-baselines). First, you need to acquire HM3D_v0.2 Instance image goal navigation dataset in the [link](https://dl.fbaipublicfiles.com/habitat/data/datasets/imagenav/hm3d/v2/instance_imagenav_hm3d_v2.zip). Note that, you need to download [HM3D_v0.2](https://github.com/facebookresearch/habitat-sim/blob/main/DATASETS.md#habitat-matterport-3d-research-dataset-hm3d) for ImageNav benchmark.
 
-Similar to the above task, we just need the change the config to image-nav:
+Similar to the above task, we just need the change the config to instance_imagenav:
   ```
       python -u -m habitat_baselines.run \
-      --config-name=imagenav/baseline_<name>.yaml
+      --config-name=instance_imagenav/baseline_<name>.yaml
   ```
 To test on a single machine use the following script from `habitat-lab` directory:
   ```
       python -u -m habitat_baselines.run \
-      --config-name=imagenav/baseline_<name>.yaml \
+      --config-name=instance_imagenav/baseline_<name>.yaml \
       habitat_baselines.evaluate=True
   ```
 
