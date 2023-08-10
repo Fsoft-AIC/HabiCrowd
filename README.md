@@ -107,7 +107,7 @@ You will find further information for installation in the the forked Github repo
         TASK_CONFIG.DATASET.SPLIT val
     ```
 ## Task: PointNav
-Follow the instructions from [Habitat-Lab](https://github.com/facebookresearch/habitat-lab/tree/main/habitat-baselines). First, you need to acquire HM3D PointNav dataset in the [link](https://arxiv.org/abs/1807.06757).
+Follow the instructions from [Habitat-Lab](https://github.com/facebookresearch/habitat-lab/tree/main/habitat-baselines). First, you need to acquire HM3D PointNav dataset in the [link](https://dl.fbaipublicfiles.com/habitat/data/datasets/pointnav/hm3d/v1/pointnav_hm3d_v1.zip).
 
 We still use [the forked version Habitat-Lab](https://github.com/habicrowd/habitat-lab). To run on a single machine use the following script from `habitat-lab` directory:
   ```
@@ -121,8 +121,8 @@ To test on a single machine use the following script from `habitat-lab` director
       habitat_baselines.evaluate=True
   ```
 
-## Task: PointNav
-Follow the instructions from [Habitat-Lab](https://github.com/facebookresearch/habitat-lab/tree/main/habitat-baselines). First, you need to acquire HM3D PointNav dataset in the [link](https://arxiv.org/abs/1807.06757).
+## Task: ImageNav
+Follow the instructions from [Habitat-Lab](https://github.com/facebookresearch/habitat-lab/tree/main/habitat-baselines). First, you need to acquire HM3D_v0.2 Instance image goal navigation dataset in the [link](https://dl.fbaipublicfiles.com/habitat/data/datasets/imagenav/hm3d/v2/instance_imagenav_hm3d_v2.zip). Note that, you need to download [HM3D_v0.2](https://github.com/facebookresearch/habitat-sim/blob/main/DATASETS.md#habitat-matterport-3d-research-dataset-hm3d) for ImageNav benchmark.
 
 Similar to the above task, we just need the change the config to image-nav:
   ```
