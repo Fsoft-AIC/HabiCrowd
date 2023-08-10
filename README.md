@@ -1,5 +1,6 @@
 # Update
 - As per 7th August 2023, we have included 424 more scenes to HabiCrowd, increasing the number of configured scenes to 480.
+- As per 10th August 2023, we introduced ImageNav to HabiCrowd.
 
 <p align="center">
   <img width = "50%" src='res/img/habicrowd.png' />
@@ -119,6 +120,22 @@ To test on a single machine use the following script from `habitat-lab` director
       --config-name=pointnav/baseline_<name>.yaml \
       habitat_baselines.evaluate=True
   ```
+
+## Task: PointNav
+Follow the instructions from [Habitat-Lab](https://github.com/facebookresearch/habitat-lab/tree/main/habitat-baselines). First, you need to acquire HM3D PointNav dataset in the [link](https://arxiv.org/abs/1807.06757).
+
+Similar to the above task, we just need the change the config to image-nav:
+  ```
+      python -u -m habitat_baselines.run \
+      --config-name=imagenav/baseline_<name>.yaml
+  ```
+To test on a single machine use the following script from `habitat-lab` directory:
+  ```
+      python -u -m habitat_baselines.run \
+      --config-name=imagenav/baseline_<name>.yaml \
+      habitat_baselines.evaluate=True
+  ```
+
 
 ## Acknowledgments
 
