@@ -1,17 +1,25 @@
-# Update
+## Update
 - As of 7th August 2023, we have included 424 more scenes to HabiCrowd, increasing the number of configured scenes to 480.
 - As of 10th August 2023, we introduced ImageNav to HabiCrowd.
 
 <p align="center">
   <img width = "50%" src='res/img/habicrowd.png' />
   </p>
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>. For more information, see <a rel="license" href="https://matterport.com/matterport-end-user-license-agreement-academic-use-model-data">HM3D license</a> and <a rel="license" href="https://aihabitat.org/terms-of-use/">Habitat Terms of Use</a>. 
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>. For more information, see <a rel="license" href="https://matterport.com/matterport-end-user-license-agreement-academic-use-model-data">HM3D license</a> and <a rel="license" href="https://aihabitat.org/terms-of-use/">Habitat Terms of Use</a>.
 
 --------------------------------------------------------------------------------
+## Table of contents
+   1. [Overview](#overview)
+   1. [ObjectNav](#objectnav)
+   1. [PointNav](#pointnav)
+   1. [ImageNav](#imagenav)
+
 # HabiCrowd
 This repository contains the code for running HabiCrowd.
+
+## Overview
    
-## Task: ObjectNav
+## ObjectNav
 
 In ObjectNav, an agent is placed at a random starting point and orientation in an unknown environment and instructed to go to an instance of an object category (*'find a chair'*). There is no map of the world provided, thus the agent must rely only on its sensory input to navigate.
 
@@ -106,7 +114,7 @@ You will find further information for installation in the the forked Github repo
         EVAL_CKPT_PATH_DIR $PATH_TO_CHECKPOINT \
         TASK_CONFIG.DATASET.SPLIT val
     ```
-## Task: PointNav
+## PointNav
 Follow the instructions from [Habitat-Lab](https://github.com/facebookresearch/habitat-lab/tree/main/habitat-baselines). First, you need to acquire HM3D PointNav dataset in the [link](https://dl.fbaipublicfiles.com/habitat/data/datasets/pointnav/hm3d/v1/pointnav_hm3d_v1.zip).
 
 We still use [the forked version Habitat-Lab](https://github.com/habicrowd/habitat-lab). To run on a single machine use the following script from `habitat-lab` directory:
@@ -121,7 +129,7 @@ To test on a single machine use the following script from `habitat-lab` director
       habitat_baselines.evaluate=True
   ```
 
-## Task: ImageNav
+## ImageNav
 Follow the instructions from [Habitat-Lab](https://github.com/facebookresearch/habitat-lab/tree/main/habitat-baselines). First, you need to acquire HM3D_v0.2 Instance image goal navigation dataset in the [link](https://dl.fbaipublicfiles.com/habitat/data/datasets/imagenav/hm3d/v2/instance_imagenav_hm3d_v2.zip). Note that, you need to download [HM3D_v0.2](https://github.com/facebookresearch/habitat-sim/blob/main/DATASETS.md#habitat-matterport-3d-research-dataset-hm3d) for ImageNav benchmark.
 
 Similar to the above task, we just need the change the config to instance_imagenav:
