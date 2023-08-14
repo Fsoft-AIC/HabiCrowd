@@ -18,6 +18,21 @@
 This repository contains the code for running HabiCrowd.
 
 ## Overview
+
+<p align="center">
+  <video controls width="300">
+    <source src="res/video/scene_1.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <video controls width="300">
+    <source src="res/video/scene_2.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <video controls width="300">
+    <source src="res/video/scene_3.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</p>
    
 ## ObjectNav
 
