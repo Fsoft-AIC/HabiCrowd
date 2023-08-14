@@ -20,20 +20,11 @@ This repository contains the code for running HabiCrowd.
 ## Overview
 
 HabiCrowd, a new dataset and benchmark for crowd-aware visual navigation that surpasses other benchmarks in terms of human diversity and computational utilization. HabiCrowd can be utilized to study crowd-aware visual navigation tasks. A notable feature of HabiCrowd is that our crowd-aware settings is 3D, which is scarcely studied by previous works.
+
 <p align="center">
-  <video controls width="300">
-    <source src="res/video/scene_1.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-  <video controls width="300">
-    <source src="res/video/scene_2.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-  <video controls width="300">
-    <source src="res/video/scene_3.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
+  <img src="https://gifs.com/gif/scene-1-k2xJzN" width="300"/>
 </p>
+
    
 ## ObjectNav
 
