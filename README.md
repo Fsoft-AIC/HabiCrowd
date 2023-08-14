@@ -21,9 +21,8 @@ This repository contains the code for running HabiCrowd.
 
 HabiCrowd, a new dataset and benchmark for crowd-aware visual navigation that surpasses other benchmarks in terms of human diversity and computational utilization. HabiCrowd can be utilized to study crowd-aware visual navigation tasks. A notable feature of HabiCrowd is that our crowd-aware settings is 3D, which is scarcely studied by previous works.
 
-<video src='https://github.com/habicrowd/HabiCrowd/assets/135209111/b5364b65-6602-409e-8ca9-f1c378d48da4' width=180/>
+https://github.com/habicrowd/HabiCrowd/assets/135209111/b5364b65-6602-409e-8ca9-f1c378d48da4
 
-   
 ## ObjectNav
 
 In ObjectNav, an agent is placed at a random starting point and orientation in an unknown environment and instructed to go to an instance of an object category (*'find a chair'*). There is no map of the world provided, thus the agent must rely only on its sensory input to navigate.
