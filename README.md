@@ -1,6 +1,6 @@
 # Update
-- As per 7th August 2023, we have included 424 more scenes to HabiCrowd, increasing the number of configured scenes to 480.
-- As per 10th August 2023, we introduced ImageNav to HabiCrowd.
+- As of 7th August 2023, we have included 424 more scenes to HabiCrowd, increasing the number of configured scenes to 480.
+- As of 10th August 2023, we introduced ImageNav to HabiCrowd.
 
 <p align="center">
   <img width = "50%" src='res/img/habicrowd.png' />
