@@ -30,7 +30,7 @@ In ObjectNav, an agent is placed at a random starting point and orientation in a
 The agent has an RGB-D camera as well as a (noiseless) GPS+Compass sensor. The GPS+Compass sensor determines the agent's current location and orientation in relation to the beginning of the episode. In simulation, we try to match the camera specifications (field of view, resolution) to the Azure Kinect camera, although this work does not include any injected sensor noise.
 
 ### Dataset
-We use 56 scenes in the [Habitat-Matterport3D (HM3D)](https://aihabitat.org/datasets/hm3d/) dataset with train/val/test splits on 36/8/12. We use 6 object goal categories: chair, couch, potted plant, bed, toilet and tv as traditional ObjectNav in Habitat simulator.
+We use 480 scenes in the [Habitat-Matterport3D (HM3D)](https://aihabitat.org/datasets/hm3d/) dataset with train/val/test splits on 400/40/40. We use 6 object goal categories: chair, couch, potted plant, bed, toilet and tv as traditional ObjectNav in Habitat simulator.
 
 ### Starter
 To begin with, install the [Habitat-Sim](https://github.com/facebookresearch/habitat-sim/). Install [our forked version Habitat-Lab](https://github.com/habicrowd/habitat-lab), where we have developed our baselines as well as human dynamics. You can install Habitat-Sim using the custom Conda package for habitat challenge 2022 with:
